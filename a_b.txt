@@ -1,0 +1,60 @@
+Wallet 'testwallet' is already loaded.
+Generating legacy addresses...
+Address A: mu3RR2C6DfuyxNMoWgEPpTnKaqZDjtnXQt
+Address B: n4YMQn8X78Fr1Uans7iwaNgAAr7SEHAF5d
+Address C: mpeYSoCn9BgdLrotvBsP15WPNppUVES57Q
+Funding Address A...
+Generated 101 blocks to fund Address A
+Balance of Address A: 11512.50000000 BTC
+Creating raw transaction from A to B...
+Raw transaction: 0200000001048c5736f4dd860ce981339a071cd820440d6b1dbf08004f05810a3da2630c6d0000000000fdffffff0200e1f505000000001976a914fc8e9aeefa27c21a60fc5e9c1918fc8d2509bd2d88ac4a9a8b44000000001976a914945cc0b6782c0cb986673cd3f2410a85f1735d4e88ac00000000
+Signing the transaction...
+Signed transaction: 0200000001048c5736f4dd860ce981339a071cd820440d6b1dbf08004f05810a3da2630c6d000000006a47304402201cacf0fa2fec0b724a589ca016d611af5e5b673e272138149835cceb21c169d702201eccea5a5a5eb8bf4d79c46ad0c598c969204c618d13701608dda612da9c03c7012103844e4a40874b3640aee4e65483734e44a7f076856c7bc78061db9c6b2d154185fdffffff0200e1f505000000001976a914fc8e9aeefa27c21a60fc5e9c1918fc8d2509bd2d88ac4a9a8b44000000001976a914945cc0b6782c0cb986673cd3f2410a85f1735d4e88ac00000000
+Broadcasting the transaction...
+Transaction A to B broadcasted, txid: 0032d39b9f2a99782846759dadda1a59f16fc7b291a2f5c0af450ea3c48caed9
+Decoding the transaction...
+Decoded transaction:
+{
+  "txid": "0032d39b9f2a99782846759dadda1a59f16fc7b291a2f5c0af450ea3c48caed9",
+  "hash": "0032d39b9f2a99782846759dadda1a59f16fc7b291a2f5c0af450ea3c48caed9",
+  "version": 2,
+  "size": 225,
+  "vsize": 225,
+  "weight": 900,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "6d0c63a23d0a81054f0008bf1d6b0d4420d81c079a3381e90c86ddf436578c04",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "304402201cacf0fa2fec0b724a589ca016d611af5e5b673e272138149835cceb21c169d702201eccea5a5a5eb8bf4d79c46ad0c598c969204c618d13701608dda612da9c03c7[ALL] 03844e4a40874b3640aee4e65483734e44a7f076856c7bc78061db9c6b2d154185",
+        "hex": "47304402201cacf0fa2fec0b724a589ca016d611af5e5b673e272138149835cceb21c169d702201eccea5a5a5eb8bf4d79c46ad0c598c969204c618d13701608dda612da9c03c7012103844e4a40874b3640aee4e65483734e44a7f076856c7bc78061db9c6b2d154185"
+      },
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": "1.00000000",
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "OP_DUP OP_HASH160 fc8e9aeefa27c21a60fc5e9c1918fc8d2509bd2d OP_EQUALVERIFY OP_CHECKSIG",
+        "desc": "addr(n4YMQn8X78Fr1Uans7iwaNgAAr7SEHAF5d)#3rvfphj7",
+        "hex": "76a914fc8e9aeefa27c21a60fc5e9c1918fc8d2509bd2d88ac",
+        "address": "n4YMQn8X78Fr1Uans7iwaNgAAr7SEHAF5d",
+        "type": "pubkeyhash"
+      }
+    },
+    {
+      "value": "11.49999690",
+      "n": 1,
+      "scriptPubKey": {
+        "asm": "OP_DUP OP_HASH160 945cc0b6782c0cb986673cd3f2410a85f1735d4e OP_EQUALVERIFY OP_CHECKSIG",
+        "desc": "addr(mu3RR2C6DfuyxNMoWgEPpTnKaqZDjtnXQt)#w0rxqu6h",
+        "hex": "76a914945cc0b6782c0cb986673cd3f2410a85f1735d4e88ac",
+        "address": "mu3RR2C6DfuyxNMoWgEPpTnKaqZDjtnXQt",
+        "type": "pubkeyhash"
+      }
+    }
+  ]
+}

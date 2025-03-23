@@ -1,0 +1,100 @@
+{
+    "txid_a_to_b": "52e6d24664f4728865d3fe71736cc166997a5ddd1af16393b1aa665ba5fb35b9",
+    "txid_b_to_c": "54838e7493801d7cd045187fd177dc6c746bcefe2d3c18e93906050bc462311c",
+    "decoded_a_to_b": {
+        "txid": "52e6d24664f4728865d3fe71736cc166997a5ddd1af16393b1aa665ba5fb35b9",
+        "hash": "f5744555bb34bd1ccc78c2f98048bfbc98796297217b8d3e0b0d6fddc46f071d",
+        "version": 2,
+        "size": 247,
+        "vsize": 166,
+        "weight": 661,
+        "locktime": 0,
+        "vin": [
+            {
+                "txid": "451d615b051b5205be4b382b0c6457edae09a773b79f692bffa7d3504b88c0c1",
+                "vout": 1,
+                "scriptSig": {
+                    "asm": "0014738ad22e087faf629cdc10c94b3539ee6867eebe",
+                    "hex": "160014738ad22e087faf629cdc10c94b3539ee6867eebe"
+                },
+                "txinwitness": [
+                    "3044022069e1e06f18ef2904670fb0db241eb09ead8e5b64dfd1420b1d72e12ebd3301a9022028a46680e67ad876de86650dd4797213571af3571cc6471fa9e53fafdfa9484a01",
+                    "0290049798ed08ffdd667e8d5136ca100b3658fa42532d57e1d6cf723ed5eb61f7"
+                ],
+                "sequence": 4294967293
+            }
+        ],
+        "vout": [
+            {
+                "value": "0.50000000",
+                "n": 0,
+                "scriptPubKey": {
+                    "asm": "OP_HASH160 ed58926178a1fe209d402eadd9d9c9cb90ce8875 OP_EQUAL",
+                    "desc": "addr(2NEtCEpmCQ3nqr7ma3aPiuaXbBEjBG8Nck3)#ty7zvy72",
+                    "hex": "a914ed58926178a1fe209d402eadd9d9c9cb90ce887587",
+                    "address": "2NEtCEpmCQ3nqr7ma3aPiuaXbBEjBG8Nck3",
+                    "type": "scripthash"
+                }
+            },
+            {
+                "value": "0.49990000",
+                "n": 1,
+                "scriptPubKey": {
+                    "asm": "OP_HASH160 487d8787632c50a64d15bce118fc5d9180d950a8 OP_EQUAL",
+                    "desc": "addr(2MyrX22ozYhuwZ9TPgP8gtcQ5xLWW8bHbG5)#vcxdqqq3",
+                    "hex": "a914487d8787632c50a64d15bce118fc5d9180d950a887",
+                    "address": "2MyrX22ozYhuwZ9TPgP8gtcQ5xLWW8bHbG5",
+                    "type": "scripthash"
+                }
+            }
+        ]
+    },
+    "decoded_b_to_c": {
+        "txid": "54838e7493801d7cd045187fd177dc6c746bcefe2d3c18e93906050bc462311c",
+        "hash": "6168d8cdabf56ef562b633700ededcbbe9433bac9828cbc1bec65a1a9eebe403",
+        "version": 2,
+        "size": 247,
+        "vsize": 166,
+        "weight": 661,
+        "locktime": 0,
+        "vin": [
+            {
+                "txid": "52e6d24664f4728865d3fe71736cc166997a5ddd1af16393b1aa665ba5fb35b9",
+                "vout": 0,
+                "scriptSig": {
+                    "asm": "001426e4d7f1b97f4f99ca696f1ebb374537ecd9f191",
+                    "hex": "16001426e4d7f1b97f4f99ca696f1ebb374537ecd9f191"
+                },
+                "txinwitness": [
+                    "3044022040e10cc4b5849ebc238d2d89db47c9075bd21e779c89bfd98a1390b256a06fdc02204d2a7da9146113f25bf92c1dee29d429e8d323b10137548d64be3d66dcc63a9d01",
+                    "02ff261611fe0a8976bf9462d295c39b61be8d218173f7a2910240c3049129ef00"
+                ],
+                "sequence": 4294967293
+            }
+        ],
+        "vout": [
+            {
+                "value": "0.30000000",
+                "n": 0,
+                "scriptPubKey": {
+                    "asm": "OP_HASH160 7bee133ade36e4b011c4ed93d28c2d260219b41c OP_EQUAL",
+                    "desc": "addr(2N4YWJdPasaJAsckKaAy28Kx7JY3rVUeM19)#m896xdfr",
+                    "hex": "a9147bee133ade36e4b011c4ed93d28c2d260219b41c87",
+                    "address": "2N4YWJdPasaJAsckKaAy28Kx7JY3rVUeM19",
+                    "type": "scripthash"
+                }
+            },
+            {
+                "value": "0.19990000",
+                "n": 1,
+                "scriptPubKey": {
+                    "asm": "OP_HASH160 ed58926178a1fe209d402eadd9d9c9cb90ce8875 OP_EQUAL",
+                    "desc": "addr(2NEtCEpmCQ3nqr7ma3aPiuaXbBEjBG8Nck3)#ty7zvy72",
+                    "hex": "a914ed58926178a1fe209d402eadd9d9c9cb90ce887587",
+                    "address": "2NEtCEpmCQ3nqr7ma3aPiuaXbBEjBG8Nck3",
+                    "type": "scripthash"
+                }
+            }
+        ]
+    }
+}

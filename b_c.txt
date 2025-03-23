@@ -1,0 +1,60 @@
+Mining a block to confirm the A-to-B transaction...
+Listing unspent outputs for Address B...
+Found UTXO: {'txid': '0032d39b9f2a99782846759dadda1a59f16fc7b291a2f5c0af450ea3c48caed9', 'vout': 0, 'address': 'n4YMQn8X78Fr1Uans7iwaNgAAr7SEHAF5d', 'label': 'Address B', 'scriptPubKey': '76a914fc8e9aeefa27c21a60fc5e9c1918fc8d2509bd2d88ac', 'amount': Decimal('1.00000000'), 'confirmations': 1, 'spendable': True, 'solvable': True, 'desc': 'pkh([3f2c433f/44h/1h/0h/0/40]03c0f7a2d9548a47d1316e4705ee85659085e13e979adfc1ace51627694f0b9570)#zzsrsu8t', 'parent_descs': ['pkh(tpubD6NzVbkrYhZ4YLq46tAFFKcrdWtz54RQaurko31kAv53KkZLsbw6uSjeKC2DMQfA482hWda2VeSe2ECiwvZeMm4cWPC39GvwJ5JMvgLiZzj/44h/1h/0h/0/*)#h08altpu'], 'safe': True}
+Creating raw transaction from B to C...
+Raw transaction: 0200000001d9ae8cc4a30e45afc0f5a291b2c76ff1591adaad9d75462878992a9f9bd332000000000000fdffffff0280f0fa02000000001976a91464288d284258d8c1024aa81c6074baf68e8b3e8788ac70c9fa02000000001976a914fc8e9aeefa27c21a60fc5e9c1918fc8d2509bd2d88ac00000000
+Signing the transaction...
+Signed transaction: 0200000001d9ae8cc4a30e45afc0f5a291b2c76ff1591adaad9d75462878992a9f9bd33200000000006a47304402203f872a4a1cb02442090a3f45372046a043ea6c15d33ab512ae6d7e11feb4c18602200144dca1ca09826fb105e2e36681a50c040bf24b4d5d4cb4bca1aa0091d6ba47012103c0f7a2d9548a47d1316e4705ee85659085e13e979adfc1ace51627694f0b9570fdffffff0280f0fa02000000001976a91464288d284258d8c1024aa81c6074baf68e8b3e8788ac70c9fa02000000001976a914fc8e9aeefa27c21a60fc5e9c1918fc8d2509bd2d88ac00000000
+Broadcasting the transaction...
+Transaction B to C broadcasted, txid: 97cc40c07f0445d498970993b95b28b66c6d6fc723276b796a40f68421d0dc07
+Decoding the transaction...
+Decoded transaction:
+{
+  "txid": "97cc40c07f0445d498970993b95b28b66c6d6fc723276b796a40f68421d0dc07",
+  "hash": "97cc40c07f0445d498970993b95b28b66c6d6fc723276b796a40f68421d0dc07",
+  "version": 2,
+  "size": 225,
+  "vsize": 225,
+  "weight": 900,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "0032d39b9f2a99782846759dadda1a59f16fc7b291a2f5c0af450ea3c48caed9",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "304402203f872a4a1cb02442090a3f45372046a043ea6c15d33ab512ae6d7e11feb4c18602200144dca1ca09826fb105e2e36681a50c040bf24b4d5d4cb4bca1aa0091d6ba47[ALL] 03c0f7a2d9548a47d1316e4705ee85659085e13e979adfc1ace51627694f0b9570",
+        "hex": "47304402203f872a4a1cb02442090a3f45372046a043ea6c15d33ab512ae6d7e11feb4c18602200144dca1ca09826fb105e2e36681a50c040bf24b4d5d4cb4bca1aa0091d6ba47012103c0f7a2d9548a47d1316e4705ee85659085e13e979adfc1ace51627694f0b9570"
+      },
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 0.5,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "OP_DUP OP_HASH160 64288d284258d8c1024aa81c6074baf68e8b3e87 OP_EQUALVERIFY OP_CHECKSIG",
+        "desc": "addr(mpeYSoCn9BgdLrotvBsP15WPNppUVES57Q)#af6a96v3",
+        "hex": "76a91464288d284258d8c1024aa81c6074baf68e8b3e8788ac",
+        "address": "mpeYSoCn9BgdLrotvBsP15WPNppUVES57Q",
+        "type": "pubkeyhash"
+      }
+    },
+    {
+      "value": 0.4999,
+      "n": 1,
+      "scriptPubKey": {
+        "asm": "OP_DUP OP_HASH160 fc8e9aeefa27c21a60fc5e9c1918fc8d2509bd2d OP_EQUALVERIFY OP_CHECKSIG",
+        "desc": "addr(n4YMQn8X78Fr1Uans7iwaNgAAr7SEHAF5d)#3rvfphj7",
+        "hex": "76a914fc8e9aeefa27c21a60fc5e9c1918fc8d2509bd2d88ac",
+        "address": "n4YMQn8X78Fr1Uans7iwaNgAAr7SEHAF5d",
+        "type": "pubkeyhash"
+      }
+    }
+  ]
+}
+
+Comparing scripts...
+Challenge script (scriptPubKey from A-to-B): None
+Response script (scriptSig from B-to-C): 47304402203f872a4a1cb02442090a3f45372046a043ea6c15d33ab512ae6d7e11feb4c18602200144dca1ca09826fb105e2e36681a50c040bf24b4d5d4cb4bca1aa0091d6ba47012103c0f7a2d9548a47d1316e4705ee85659085e13e979adfc1ace51627694f0b9570
+Unlocking script (scriptSig) for Address B: 47304402203f872a4a1cb02442090a3f45372046a043ea6c15d33ab512ae6d7e11feb4c18602200144dca1ca09826fb105e2e36681a50c040bf24b4d5d4cb4bca1aa0091d6ba47012103c0f7a2d9548a47d1316e4705ee85659085e13e979adfc1ace51627694f0b9570
